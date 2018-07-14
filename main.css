@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url("font/headliner.ttf") format("truetype");
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    /* Background image from https://www.toptal.com/designers/subtlepatterns/ */
+    background-image: url("img/bgi.png");
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255, .15);
+    height: 100%;
+}
+
+#header{
+    margin: 0 auto;
+    width: 480px;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#inscription{
+    color: #f7b417;
+    font-size: 73px;
+    font-family: 'My Custom Font';
+    letter-spacing: 1px;
+    border: 7px solid #f7b417;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 5px;
+}
+
+#navbar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #f7b417;
+    padding: 10px 0;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul > li{
+    float: left;
+    width: 150px;
+    font-weight: 700;
+}
+
+ul > li:hover{
+    cursor: pointer;
+    background-color: #f7c654;
+}
+
+#content{
+    color: white;
+    margin: 10px;
+    text-align: justify;
+    margin-top: 59px;
+}
