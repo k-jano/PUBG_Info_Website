@@ -6,7 +6,7 @@
     <title>PUBG info website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fontello.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -49,25 +49,40 @@
                 <img class="mySlides" src="img/slider/slide4.jpg">
                 <img class="mySlides" src="img/slider/slide5.jpg">
                 <img class="mySlides" src="img/slider/slide6.jpg">
-                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-                    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-                    <span class="w3-badge" onclick="currentDiv(1)">1</span>
-                    <span class="w3-badge" onclick="currentDiv(2)">2</span>
-                    <span class="w3-badge" onclick="currentDiv(3)">3</span>
-                    <span class="w3-badge" onclick="currentDiv(4)">4</span>
-                    <span class="w3-badge" onclick="currentDiv(5)">5</span>
-                    <span class="w3-badge" onclick="currentDiv(6)">6</span>
-                    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+                <div class="center" style="width:100%">
+                    <div class="left">&#10094;</div>
+                    <span class="badge" id="badge0" onclick="currentDiv(0)"></span>
+                    <span class="badge" id="badge1" onclick="currentDiv(1)"></span>
+                    <span class="badge" id="badge2" onclick="currentDiv(2)"></span>
+                    <span class="badge" id="badge3" onclick="currentDiv(3)"></span>
+                    <span class="badge" id="badge4" onclick="currentDiv(4)"></span>
+                    <span class="badge" id="badge5" onclick="currentDiv(5)"></span>
+                    <div class="right">&#10095;</div>
                 </div>
                 
             </div>
         </div>
         <div id="footer">
-            <div id="socials"></div>
+            <div id="socialDivs">
+                <div class="item">
+                    <i class="icon-facebook-squared"></i>
+                </div>
+                <div class="item">
+                    <i class="icon-youtube"></i>
+                </div>
+                <div class="item">
+                    <i class="icon-twitter"></i>
+                </div>
+                <div class="item">
+                    <i class="icon-twitch"></i>
+                </div>
+                <div style="clear:both"></div>   
+            </div>
             <div id="signature">JAKUB JANOWSKI &copy 2018</div>
+            <div style="clear:both"></div>  
         </div>
     </div>
 
-    <script src="jquery.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
