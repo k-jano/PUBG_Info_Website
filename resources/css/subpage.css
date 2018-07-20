@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+.position{
+    font-size: 0;
+}
+
+.pos{
+    display: inline-block;
+    white-space: normal;
+    font-size: 22px;
+    height: 400px;
+    width: 50%;
+    vertical-align:top;
+    text-align: center;
+}
+
+.pos_photo{
+    line-height: 400px;
+}
+
+.photo{
+    height: 250px;
+    vertical-align: middle;
+}
+
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

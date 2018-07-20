@@ -8,13 +8,14 @@
     <title>PUBG info website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="resources/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/css/subpage.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="fontello/css/fontello.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 </head>
-<body onload="showDivs(1)">
+<body>
     <div class="container" id="firstContainer">
         <div id="header">
             <div id="inscription">PUBG INFO WEBSITE</div>
@@ -50,35 +51,17 @@
     </div>
     <div class="container">
         <div id="content">
-            <div id="content_text">
-            <h2>Welcome on my website!</h2>
-            <p>I am really glad that I can welcome You on PUBG info webstite. 
-            You're probably wondering what's the idea for such a website. The answer is simply I am fun of video games, especially shooters.
-            And I liked it very much to play shooters in battle royale mode. One of the first, and for sure the most popular was Playerunknown's Battlegrounds game.</p>
-            <p>You're also wondering what is this website about. This is my first big project, where I want to show You as many information about game as I can.
-            There are a lot of subpages focus on maps, armor, weapons etc. I also prepared a Memo game with some weapon. I hope that You will enjoy my website.
-            </p> 
-            <p>In order not to let this main site be empty I prepared some funny screenshots from my games in slider below.
-            </p>
-            </div>
-            <div id="slider">
-                <img class="mySlides" src="img/slider/slide1.jpg">
-                <img class="mySlides" src="img/slider/slide2.jpg">
-                <img class="mySlides" src="img/slider/slide3.jpg">
-                <img class="mySlides" src="img/slider/slide4.jpg">
-                <img class="mySlides" src="img/slider/slide5.jpg">
-                <img class="mySlides" src="img/slider/slide6.jpg">
-                <div class="center" style="width:100%">
-                    <div class="left">&#10094;</div>
-                    <span class="badge" id="badge0" onclick="currentDiv(0)"></span>
-                    <span class="badge" id="badge1" onclick="currentDiv(1)"></span>
-                    <span class="badge" id="badge2" onclick="currentDiv(2)"></span>
-                    <span class="badge" id="badge3" onclick="currentDiv(3)"></span>
-                    <span class="badge" id="badge4" onclick="currentDiv(4)"></span>
-                    <span class="badge" id="badge5" onclick="currentDiv(5)"></span>
-                    <div class="right">&#10095;</div>
+            
+            <h2>Maps</h2>
+            <div class="position">
+                <div class="pos">
+                    <span class="helper"></span>
+                    <img class="photo pos_photo" src="img/maps/erangel.jpg"/>
                 </div>
-                
+                <div class="pos">
+                    <h3>Erangel</h3>
+                    <p>Blablabla</p>
+                </div>
             </div>
         </div>
         <div id="footer">
@@ -110,7 +93,6 @@
         </div>
     </div>
 
-    <script src="resources/js/slider.js"></script>
     <script src="resources/js/sticky.js"></script>
 </body>
 </html>
