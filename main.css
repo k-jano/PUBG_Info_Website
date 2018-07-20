@@ -38,13 +38,23 @@ body{
     border-radius: 5px;
 }
 
-#navbar{
-    position: absolute;
-    left: 0;
+#mainNav{
+    height: 59px;
+}
+
+#nav{
     width: 100%;
     background-color: #f7b417;
     padding: 10px 0;
     text-align: center;
+}
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;   
 }
 
 ul{
@@ -71,8 +81,9 @@ ul > li:hover{
 #content{
     color: white;
     margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: justify;
-    margin-top: 59px;
     padding: 20px 100px;
     font-size: 22px;
 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>PUBG info website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -13,12 +15,13 @@
         crossorigin="anonymous"></script>
 </head>
 <body onload="showDivs(1)">
-    <div class="container">
+    <div class="container" id="firstContainer">
         <div id="header">
             <div id="inscription">PUBG INFO WEBSITE</div>
         </div>
-    
-        <div id="navbar">
+    </div>
+    <div id="mainNav">
+        <div id="nav">
             <ul>
                 <li>MAIN PAGE</li>
                 <li>MAPS</li>
@@ -30,12 +33,14 @@
                 <div style="clear: both;"></div>
             </ul>
         </div>
+    </div>
+    <div class="container">
         <div id="content">
             <div id="content_text">
             <h2>Welcome on my website!</h2>
             <p>I am really glad that I can welcome You on PUBG info webstite. 
             You're probably wondering what's the idea for such a website. The answer is simply I am fun of video games, especially shooters.
-            And I liked it very much to play shooters in battle royale mode. One of the first, and for sure the most popular was Player Unknown Battlegrounds game.</p>
+            And I liked it very much to play shooters in battle royale mode. One of the first, and for sure the most popular was Playerunknown's Battlegrounds game.</p>
             <p>You're also wondering what is this website about. This is my first big project, where I want to show You as many information about game as I can.
             There are a lot of subpages focus on maps, armor, weapons etc. I also prepared a Memo game with some weapon. I hope that You will enjoy my website.
             </p> 
@@ -84,5 +89,6 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="sticky.js"></script>
 </body>
 </html>

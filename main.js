@@ -79,4 +79,4 @@ $(function(){
     $(".badge").css('background-color', 'transparent');
     $(class_tmp).css('background-color', 'white');
   });
-});
+})
