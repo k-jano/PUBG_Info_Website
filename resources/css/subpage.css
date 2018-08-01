@@ -2,31 +2,32 @@ body{
     margin: 0;
 }
 
-.position{
-    font-size: 0;
-}
-
-.pos{
-    display: inline-block;
-    white-space: normal;
-    font-size: 22px;
-    height: 400px;
-    width: 50%;
-    vertical-align:top;
+.subheader{
     text-align: center;
 }
 
-.pos_photo{
-    line-height: 400px;
+header > p {
+    text-indent: 0%;
 }
 
-.photo{
-    height: 250px;
-    vertical-align: middle;
+h1{
+    font-size: 55px;
 }
 
-.helper{
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+.posimg{
+    text-align: center;
+}
+
+.mapimg{
+    height: 25em;
+}
+
+#content article{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted white;
+}
+
+#content article:last-child{
+    border-bottom: none;
 }
