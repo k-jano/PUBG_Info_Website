@@ -31,3 +31,21 @@ h1{
 #content article:last-child{
     border-bottom: none;
 }
+
+.subTable{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.subTable img {
+    height: 3em;
+}
+
+.onlyColor{
+    color: #f7b417;
+}
