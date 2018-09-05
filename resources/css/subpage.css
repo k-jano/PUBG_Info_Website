@@ -49,3 +49,12 @@ th, td{
 .onlyColor{
     color: #f7b417;
 }
+
+td img{
+    transition: all 0.5s ease-in-out;
+}
+
+td img:hover{
+    transform: scale(1.2) rotate(5deg);
+    cursor: pointer;
+}

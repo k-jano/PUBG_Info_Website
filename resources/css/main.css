@@ -196,3 +196,15 @@ p{
     line-height: 54px;
     padding: 0 200px;
 }
+
+.photo{
+    position: relative;
+}
+
+.photo img{
+    transition: all 0.5s ease-in-out;
+}
+
+.photo img:hover{
+    transform: scale(1.1);
+}
