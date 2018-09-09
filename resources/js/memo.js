@@ -1,22 +1,24 @@
 var range = ["AKM.png", "Groza.png", "QBZ.png", "Scar-L.png", "AUG.png", "M416.png"];
 
-var cards = ["AKM.png", "Groza.png", "Groza.png", "QBZ.png", "Scar-L.png", "AUG.png", "Scar-L.png",
-            "M416.png", "AUG.png", "AKM.png", "M416.png", "QBZ.png"];
+var limit = 6;
+
+var cards =[];
+var positionLeft=[];
 
 var oneVisible = false;
 var lock=false;
 var activeCard;
-var pairsLeft = 6;
+var pairsLeft = limit;
 var counter=0;
 
-$('#button').click(function(){
+$('#button input').click(function(){
     $('#button').css('display', 'none');
     $('#board').css('display', 'block');
     oneVisible = false;
     lock=false;
     pairsLeft = 6;
     counter=0;
-    for(i=0; i<12; i++){
+    for(i=0; i<limit*2; i++){
         $('#card'+i).css('background-image', 'url(img/memo/back.png)');
         $('#card'+i).addClass('card');
         $('#card'+i).removeClass('cardActive');
@@ -24,7 +26,22 @@ $('#button').click(function(){
     }
     $('#score').html("<p>Your score: "+ counter +"</p>");
     $('#finalScore').css('display', 'none');
+    for(i=0; i<limit; i++)
+        positionLeft[i]=2;
+    cardsShuffling();
 });
+
+function cardsShuffling(){
+    var i=0;
+    while(i<12){
+        var number = Math.floor((Math.random() * limit));
+        if(positionLeft[number]>0){
+            positionLeft[number]--;
+            cards[i]=range[number];
+            i++;
+        }
+    }
+}
 
 $('.card').click(function(){
     var my_id=this.id;
