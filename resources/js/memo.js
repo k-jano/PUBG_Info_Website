@@ -1,5 +1,30 @@
+var range = ["AKM.png", "Groza.png", "QBZ.png", "Scar-L.png", "AUG.png", "M416.png"];
+
 var cards = ["AKM.png", "Groza.png", "Groza.png", "QBZ.png", "Scar-L.png", "AUG.png", "Scar-L.png",
             "M416.png", "AUG.png", "AKM.png", "M416.png", "QBZ.png"];
+
+var oneVisible = false;
+var lock=false;
+var activeCard;
+var pairsLeft = 6;
+var counter=0;
+
+$('#button').click(function(){
+    $('#button').css('display', 'none');
+    $('#board').css('display', 'block');
+    oneVisible = false;
+    lock=false;
+    pairsLeft = 6;
+    counter=0;
+    for(i=0; i<12; i++){
+        $('#card'+i).css('background-image', 'url(img/memo/back.png)');
+        $('#card'+i).addClass('card');
+        $('#card'+i).removeClass('cardActive');
+        $('#card'+i).css('opacity', 1);    
+    }
+    $('#score').html("<p>Your score: "+ counter +"</p>");
+    $('#finalScore').css('display', 'none');
+});
 
 $('.card').click(function(){
     var my_id=this.id;
@@ -7,11 +32,6 @@ $('.card').click(function(){
     revealCard(my_nr);
 });
 
-var oneVisible = false;
-var lock=false;
-var activeCard;
-var pairsLeft = 6;
-var counter=0;
 
 function revealCard(nr){
     var thisOpacity = $('#card'+nr).css('opacity');
@@ -35,9 +55,13 @@ function revealCard(nr){
                     $('#card'+activeCard).css('opacity',0);
                     
                     pairsLeft--;
-                    if(pairsLeft==0)
-                        $('#board').html("<h1>Congrats! You won in " + counter + " turns</h1>");
-                    
+                    if(pairsLeft==0){
+                        //$("#memoHeader").css('display', 'none');
+                        $("#button").css('display', 'block');
+                        $('#finalScore').css('display', 'block');
+                        $('#finalScore').html("<h1>Congrats! You won in " + counter + " turns</h1>");
+                        $('#board').css('display', 'none');
+                    }
                     lock=false;
                 }, 1000);
             }
