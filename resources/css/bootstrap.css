@@ -3,3 +3,17 @@
     color: black;
     font-size: 20px;
 }
+
+.my-container{
+    color: white;
+}
+
+.tittle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-article{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

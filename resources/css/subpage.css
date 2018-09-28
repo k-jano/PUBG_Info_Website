@@ -58,3 +58,8 @@ td img:hover{
     transform: scale(1.2) rotate(5deg);
     cursor: pointer;
 }
+
+.postxt{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
