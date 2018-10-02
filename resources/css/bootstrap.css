@@ -17,3 +17,7 @@
     margin-top: 10px;
     margin-bottom: 25px;
 }
+
+.my-table-responsive{
+    display: table!important;
+}

@@ -33,6 +33,7 @@ h1{
 }
 
 .subTable{
+    text-align: center;
     margin: 0 auto;
     border-collapse: collapse;
 }
@@ -62,4 +63,8 @@ td img:hover{
 .postxt{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+section > p {
+    text-align: justify;
 }
